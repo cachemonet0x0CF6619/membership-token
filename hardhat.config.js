@@ -4,11 +4,7 @@ require('@nomiclabs/hardhat-etherscan');
 require('hardhat-gas-reporter');
 require('solidity-coverage');
 
-
-// You need to export an object to set up your config
-// Go to https://hardhat.org/config/ to learn more
 module.exports = {
-  // defaultNetwork: "hardhat",
   defaultNetwork: 'hardhat',
   networks: {
     hardhat: { chainId: 1337 },
@@ -18,7 +14,7 @@ module.exports = {
     settings: {
       optimizer: {
         enabled: true,
-        runs: 10000,
+        runs: 1,
       },
     },
   },

@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "build": "yarn run hardhat compile",
     "test:hardhat": "npx hardhat test",
     "test:cov": "npx hardhat coverage",
     "test": "npm run test:cov"
