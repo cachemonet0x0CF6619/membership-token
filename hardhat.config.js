@@ -3,6 +3,8 @@ require('@nomiclabs/hardhat-ethers');
 require('@nomiclabs/hardhat-etherscan');
 require('hardhat-gas-reporter');
 require('solidity-coverage');
+require('hardhat-deploy');
+require('hardhat-tracer');
 
 module.exports = {
   defaultNetwork: 'hardhat',
@@ -22,5 +24,10 @@ module.exports = {
     currency: 'USD',
     gasPrice: '100',
     coinmarketcap: process.env.CMC_KEY
+  },
+  namedAccounts: {
+    deployer: {
+      default: 0, // take first account as deployer
+    }
   }
 };
